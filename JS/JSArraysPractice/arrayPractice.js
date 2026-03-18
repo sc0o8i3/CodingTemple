@@ -1,5 +1,6 @@
 //Lvl 1 Array Practice
 let fruits = ["apple", "banana", "cherry"];
+let fruitsString = fruits;
 
 console.log("Lvl 1 Array Practice");
 console.log("Original List: ", fruits);
@@ -63,3 +64,27 @@ document.getElementById("addingMore").innerHTML = numbers;
 numbers[1] = null;
 console.log("Changing 2nd element of Numbers Array: ", numbers);
 document.getElementById("changeElement").innerHTML = numbers;
+
+let colors = ["red", "blue", "green"];
+console.log("Colors Array: ", colors);
+document.getElementById("colors").innerHTML = colors;
+
+console.log("Changing last color to black...");
+colors.pop();
+colors.push("black");
+console.log("Last color changed: ", colors);
+document.getElementById("changedColor").innerHTML = colors;
+
+//Lvl 5 Array Practice
+let favorites = ["tacos", "burritos", "fries"];
+console.log("Favorite Food: ", favorites);
+document.getElementById("favFood").innerHTML = favorites;
+
+favorites.push("burgers");
+console.log("Adding 'Burgers' to the array: ", favorites);
+document.getElementById("addedBurger").innerHTML = favorites;
+
+let sentence = "I like " + favorites[0] + " and " + favorites.at(-1) + "!";
+console.log(sentence);
+document.getElementById("sentence").innerHTML = sentence;
+

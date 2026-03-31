@@ -180,9 +180,9 @@ for (let o = 0; o < double.length; o++) {
 
 }
 
-//LVL 3. The Login Labyrinth
+//LVL 3. The Logic Labyrinth
 console.log("");
-console.log("LVL 3: The Login Labyrinth");
+console.log("LVL 3: The Logic Labyrinth");
 console.log("");
 
 //9. Divisibility Drill
@@ -248,4 +248,3 @@ for (let q = 1; q <= 10; q++) {
     //setting the string inside the element by using innerHTML
     breakListContainer.innerHTML += `<li>Number: ${q}</li>`;
 }
-

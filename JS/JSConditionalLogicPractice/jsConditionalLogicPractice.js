@@ -82,7 +82,6 @@ function checkClubEntry() {
 }
 
 //Problem 5: Perfect square checker (nested if statements)
-// Research this!!!
 function checkPerfectSquare() {
     let num = document.querySelector("#problem5").value;
     let msg = "Enter a number first.";

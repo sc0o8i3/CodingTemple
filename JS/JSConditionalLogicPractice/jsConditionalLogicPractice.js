@@ -100,3 +100,49 @@ function checkPerfectSquare() {
     let problem5Output = document.getElementById("problem5Output");
     problem5Output.innerHTML = msg;
 }
+
+//Porblem 6: Determine if a user is online or offline using ternary operator
+function checkOnlineStatus() {
+    let isOnline = document.querySelector("#problem6").checked;
+    let msg = "Select your online status first.";
+
+    msg = isOnline ? "User is online." : "User is offline.";
+
+    console.log(msg);
+
+    let problem6Output = document.getElementById("problem6Output");
+    problem6Output.innerHTML = msg;
+}
+
+//Problem 7: Choose the day from a dropdown menu and display a message showing if it's a weekday or weekend using logical operators
+function checkDay() {
+    let day = document.querySelector("#problem7").value;
+    let msg = "Select a day first.";
+
+    if (day === "Saturday" || day === "Sunday") {
+        msg = "It's the weekend!";
+    } else {
+        msg = "It's a weekday.";
+    }
+
+    console.log(msg);
+
+    let problem7Output = document.getElementById("problem7Output");
+    problem7Output.innerHTML = msg;
+}
+
+//Problem 8: Access entry using 2 checkboxes (isAdult and hasTicket) and logical operators
+function checkAccess() {
+    let isAdult = document.querySelector("#isAdult").checked;
+    let hasTicket = document.querySelector("#hasTicket").checked;
+    let problem8Output = document.getElementById("problem8Output");
+    if (isAdult && hasTicket) {
+        problem8Output.innerHTML += "<li>Access granted.</li>";
+    } else if (!isAdult && hasTicket) {
+        problem8Output.innerHTML += "<li>Need guardian.</li>";
+    } else {
+        problem8Output.innerHTML += "<li>No access.</li>";
+    }
+
+}
+

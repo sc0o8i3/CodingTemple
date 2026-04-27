@@ -57,6 +57,52 @@
     <input type="number" id="problem5" placeholder="Please enter a number."></input>
     <button onclick="checkPerfectSquare()">Check Perfect Square</button>
     <div id="problem5Output"></div>
+    &nbsp;
+    &nbsp;
+    <div><b>Problem 6</b></div>
+    &nbsp;
+    <div><i>Determine if a user is online or offline</i></div>
+    &nbsp;
+    <label>
+        <input type="checkbox" id="problem6">
+        Online
+    </label>
+    <button onclick="checkOnlineStatus()">Check Online Status</button>
+    <div id="problem6Output"></div>
+    &nbsp;
+    &nbsp;
+    <div><b>Problem 7</b></div>
+    &nbsp;
+    <div><i>Choose the day from a dropdown menu</i></div>
+    &nbsp;
+    <select id="problem7" onchange="checkDay()">
+        <option value="">Select a day</option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+    </select>
+    <div id="problem7Output"></div>
+    &nbsp;
+    &nbsp;
+    <div><b>Problem 8</b></div>
+    &nbsp;
+    <div><i>Access entry only if you're an adult and have a ticket</i></div>
+    &nbsp;
+    <label>
+        <input type="checkbox" id="isAdult">
+        I am an adult
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" id="hasTicket">
+        I have a ticket
+    </label>
+    <button onclick="checkAccess()">Check Access</button>
+    <div id="problem8Output"></div>
 
     <script src="jsConditionalLogicPractice.js"></script>
 </body>
